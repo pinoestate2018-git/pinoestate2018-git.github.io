@@ -1,1 +1,258 @@
 
+:root {
+  --pino-navy: #0b1f3a;
+  --pino-navy-soft: #163456;
+  --pino-green: #66a83f;
+  --pino-mist: #f4f8fb;
+  --pino-line: #dce5ee;
+  --pino-text: #233142;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--pino-text);
+  font-family: "Noto Sans JP", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.8;
+}
+
+a {
+  color: var(--pino-navy-soft);
+}
+
+.site-header {
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid var(--pino-line);
+  backdrop-filter: blur(10px);
+}
+
+.navbar-brand img {
+  height: 44px;
+  width: auto;
+}
+
+.brand-text {
+  color: var(--pino-navy);
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.nav-link {
+  color: var(--pino-navy);
+  font-weight: 600;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: var(--pino-green);
+}
+
+.hero {
+  min-height: 78vh;
+  background:
+    linear-gradient(90deg, rgba(11, 31, 58, 0.88), rgba(11, 31, 58, 0.46)),
+    url("../images/hero.jpg") center / cover no-repeat;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 112px 0 72px;
+}
+
+.hero-subtitle {
+  border-left: 4px solid var(--pino-green);
+  color: #dce8f3;
+  font-weight: 600;
+  padding-left: 1rem;
+}
+
+.page-hero {
+  background: linear-gradient(135deg, var(--pino-navy), var(--pino-navy-soft));
+  color: #fff;
+  padding: 132px 0 68px;
+}
+
+.section {
+  padding: 72px 0;
+}
+
+.section-soft {
+  background: var(--pino-mist);
+}
+
+.section-title {
+  color: var(--pino-navy);
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.section-kicker {
+  color: var(--pino-green);
+  font-size: 0.86rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.lead-text {
+  color: #526174;
+  font-size: 1.05rem;
+}
+
+.btn-pino {
+  background: var(--pino-green);
+  border-color: var(--pino-green);
+  color: #fff;
+  font-weight: 700;
+  padding: 0.72rem 1.2rem;
+}
+
+.btn-pino:hover {
+  background: #558d35;
+  border-color: #558d35;
+  color: #fff;
+}
+
+.btn-outline-pino {
+  border-color: #fff;
+  color: #fff;
+  font-weight: 700;
+  padding: 0.72rem 1.2rem;
+}
+
+.btn-outline-pino:hover {
+  background: #fff;
+  color: var(--pino-navy);
+}
+
+.info-card,
+.property-card,
+.contact-panel {
+  background: #fff;
+  border: 1px solid var(--pino-line);
+  border-radius: 8px;
+  box-shadow: 0 14px 36px rgba(11, 31, 58, 0.08);
+  height: 100%;
+}
+
+.info-card {
+  padding: 28px;
+}
+
+.info-icon {
+  align-items: center;
+  background: rgba(102, 168, 63, 0.12);
+  border-radius: 8px;
+  color: var(--pino-green);
+  display: inline-flex;
+  font-size: 1.35rem;
+  height: 44px;
+  justify-content: center;
+  margin-bottom: 18px;
+  width: 44px;
+}
+
+.property-card {
+  overflow: hidden;
+}
+
+.property-card img {
+  aspect-ratio: 4 / 3;
+  height: auto;
+  object-fit: cover;
+  width: 100%;
+}
+
+.property-card-body {
+  padding: 24px;
+}
+
+.property-status {
+  background: rgba(102, 168, 63, 0.12);
+  border-radius: 999px;
+  color: #4a7f2f;
+  display: inline-block;
+  font-size: 0.82rem;
+  font-weight: 800;
+  padding: 0.28rem 0.72rem;
+}
+
+.table-pino th {
+  background: var(--pino-mist);
+  color: var(--pino-navy);
+  font-weight: 800;
+  width: 30%;
+}
+
+.business-image {
+  border-radius: 8px;
+  box-shadow: 0 18px 42px rgba(11, 31, 58, 0.14);
+  width: 100%;
+}
+
+.contact-panel {
+  padding: 32px;
+}
+
+.footer {
+  background: var(--pino-navy);
+  color: #dbe6f1;
+  padding: 44px 0 28px;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #bce19d;
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.fade-up.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 991.98px) {
+  .hero {
+    min-height: 68vh;
+    padding-top: 104px;
+  }
+
+  .navbar-brand img {
+    height: 36px;
+  }
+
+  .brand-text {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero,
+  .page-hero {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  .display-4 {
+    font-size: 2.18rem;
+  }
+
+  .section {
+    padding: 52px 0;
+  }
+
+  .contact-panel,
+  .info-card {
+    padding: 24px;
+  }
+}
