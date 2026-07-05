@@ -1,1 +1,8 @@
-body{font-family:sans-serif;margin:0}header{background:#183a5a;color:#fff;padding:16px}nav a{color:#fff;margin-right:12px}.hero{padding:60px;text-align:center;background:#eef5fb}
+:root {
+  --pino-navy: #0b1f3a;
+  --pino-navy-soft: #163456;
+  --pino-green: #66a83f;
+  --pino-mist: #f4f8fb;
+  --pino-line: #dce5ee;
+  --pino-text: #233142;
+}
