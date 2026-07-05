@@ -1,1 +1,0 @@
-body{font-family:sans-serif;margin:0}header{background:#183a5a;color:#fff;padding:16px}nav a{color:#fff;margin-right:12px}.hero{padding:60px;text-align:center;background:#eef5fb}
